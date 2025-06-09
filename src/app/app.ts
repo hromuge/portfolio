@@ -9,4 +9,6 @@ import {Infocard} from './infocard/infocard';
   standalone: true,
   styleUrl: './app.css'
 })
-export class App {}
+export class App {
+  bgColor = '#232147'
+}
