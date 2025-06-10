@@ -23,14 +23,76 @@
   </div>
 </div>
 <div class="about-me-container">
-  <h2 style="font-family: 'Doto', sans-serif; font-size: 40px; color: dodgerblue">About Me</h2>
+  <h2 class="section-title">About Me</h2>
   <div class="img-wrapper" style="width: 200px; height: 200px; border: 5px solid dodgerblue">
     <img style="width: 100%; height: auto;" src="yassin.jpg">
   </div>
-  <p style="font-family: 'Doto', sans-serif; font-size: 20px; max-width: 800px; text-align: center; color: white">
+  <p style="font-family: 'Doto', sans-serif; font-size: 20px; max-width: 800px; text-align: center; color: white; margin-bottom: 0">
     I'm a software developer with a keen interest in both frontend and backend development of web-based environments. I love creating efficient, user-friendly applications and continuously strive to improve my skills.
   </p>
 </div>
-<div class="skills-container">
-  <app-infocard title="HTML & CSS" [percentageValue]="75" [years]="5"></app-infocard>
+<div style="display: flex; flex-direction: column; background-color: #23213B; padding-bottom: 48px">
+  <h2 class="section-title">My skills</h2>
+  <div class="skills-container">
+    <!-- 1 year is equal to 15 percentageValue -->
+    <app-skillcard title="HTML & CSS" [percentageValue]="75" [years]="5"></app-skillcard>
+    <app-skillcard title="Angular" [percentageValue]="30" [years]="2"></app-skillcard>
+    <app-skillcard title="NestJs" [percentageValue]="15" [years]="1"></app-skillcard>
+    <app-skillcard title="Java" [percentageValue]="45" [years]="3"></app-skillcard>
+    <app-skillcard title="SQL" [percentageValue]="60" [years]="4"></app-skillcard>
+    <app-skillcard title="TypeScript" [percentageValue]="30" [years]="2"></app-skillcard>
+    <app-skillcard title="Python" [percentageValue]="15" [years]="1"></app-skillcard>
+    <app-skillcard title="Spring" [percentageValue]="30" [years]="2"></app-skillcard>
+  </div>
+</div>
+<!-- TODO: add projects here (bomberman, discord bot etc.) and finish my journey -->
+<div style="background-color: #232147; font-family: 'Doto', sans-serif">
+  <h2 class="section-title" style="margin: 0; padding-top: 48px">My journey</h2>
+  <div style="display: flex; flex-direction: column; gap: 20px">
+
+    <div style="display: flex">
+      <div class="timeline-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="journey-text-container">
+        <h3 class="timestamp">2017-2019</h3>
+        <p class="journey-text">
+          At this time, I was a big fan of a video game called "Minecraft", which is completely written in Java. <br>
+          When playing this game, you have an endless possibility of modifying the game with so-called "mods".
+          I also tried my hand at making a few mods, as well as setting up my own server so I could play with my friends.
+          This has helped me made my first steps into the world of coding.
+        </p>
+      </div>
+    </div>
+
+    <div style="display: flex">
+      <div class="timeline-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="journey-text-container">
+        <h3 class="timestamp">2016</h3>
+        <p class="journey-text">
+          In this year, we started to have computer science classes at school. I was already familiar with the concepts of coding,
+          so I already had somewhat of a headstart when we started to solve simple problems in a simple visual language called "Scratch".
+        </p>
+      </div>
+    </div>
+
+    <div style="display: flex">
+      <div class="timeline-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="journey-text-container">
+        <h3 class="timestamp">2014</h3>
+        <p class="journey-text">
+          My journey began at the age of 10 when I first signed up for a video game creation course during summer vacation. In this course, we used a game engine called "Construct 2". <br>
+          This is a HTML-5 based engine that executes JavaScript code in the background. To make it easier for beginners, it's a visual-oriented engine that allows you to create games without writing actual code.
+        </p>
+      </div>
+    </div>
+
+  </div>
 </div>
