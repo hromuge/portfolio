@@ -96,3 +96,38 @@
   text-align: center;
   color: white;
 }
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  font-family: 'Doto', sans-serif;
+  color: white;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px double dodgerblue;
+  width: 100%;
+  max-width: 25vw;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.email-link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+a:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}

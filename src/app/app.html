@@ -1,10 +1,11 @@
 <div class="banner">
   <div class="banner-content">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
       <div class="img-wrapper">
         <img style="width: 100%; height: auto;" src="yassin.jpg">
       </div>
-      <div style="display: flex; justify-content: space-evenly; align-items: center; gap: 10px; margin: 14px 0 10px 0;">
+      <h3 style="font-size: 15px; font-family: 'Doto', sans-serif; color: white; margin: 0">Contact me!</h3>
+      <div style="display: flex; justify-content: space-evenly; align-items: center; gap: 10px;">
         <a href="https://www.linkedin.com/in/yassin-butt-b1b7b8262" target="_blank">
           <img src="linkedin.png" class="link-button">
         </a>
@@ -45,10 +46,48 @@
     <app-skillcard title="Spring" [percentageValue]="30" [years]="2"></app-skillcard>
   </div>
 </div>
-<!-- TODO: add projects here (bomberman, discord bot etc.) and finish my journey -->
-<div style="background-color: #232147; font-family: 'Doto', sans-serif">
-  <h2 class="section-title" style="margin: 0; padding-top: 48px">My journey</h2>
+<div style="background-color: #232147; padding: 48px 0">
+  <h2 class="section-title" style="margin-top: 0">My projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Java Bomberman</h3>
+      <p>Using JavaFX, a simple Framework for making client UI applications, I created a simple, bomberman-like game.</p>
+    </div>
+    <div class="project-card">
+      <h3>League of Legends Champion recommender</h3>
+      <p>With PHP as well as plain HTML and CSS, I created an application which uses the Riot Games API to analyze a persons profile
+        and recommend the next Champion to play in the game.
+      </p>
+    </div>
+    <div class="project-card">
+      <h3>Python Discord bot</h3>
+      <p>
+        A simple Discord bot written in Python, which can be used to greet new people to a server, send a random image as well as some other simple commands.
+        It uses the discord.py library to interact with the Discord API.
+      </p>
+    </div>
+  </div>
+</div>
+<div style="background-color: #23213B; font-family: 'Doto', sans-serif; padding-bottom: 48px">
+  <h2 class="section-title" style="margin: 0; padding: 48px 0">My journey</h2>
   <div style="display: flex; flex-direction: column; gap: 20px">
+
+    <div style="display: flex">
+      <div class="timeline-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="journey-text-container">
+        <h3 class="timestamp">2020-2024</h3>
+        <p class="journey-text">
+          In these 4 years, I completed my apprenticeship for software development where I acquired alot of my skills and experience which I still use today. <br>
+          In my time at Glue Software Engineering AG, I was mainly working on two different projects. One of which was for the Swiss Federal Office of Justice (Bundesamt für Justiz, BJ),
+          the other one was for the Swiss Confederation. <br>
+          The project for the BJ goes under the name of "UPReg" (Register der Urkundspersonen), which is a register for notaries in Switzerland.
+          The project for the Swiss Confederation is called "eSignr", which is a tool for the secure electronic signing of documents.
+        </p>
+      </div>
+    </div>
 
     <div style="display: flex">
       <div class="timeline-container">
@@ -93,6 +132,12 @@
         </p>
       </div>
     </div>
-
   </div>
+</div>
+<div style="background-color: #232147; display: flex; flex-direction: column; align-items: center; padding: 48px 0">
+  <h2 class="section-title" style="margin: 0;">Contact me</h2>
+  <p style="text-align: center; font-family: 'Doto', sans-serif; font-size: 20px; max-width: 800px; color: white; margin-bottom: 0;">
+    If you have any questions or want to get in touch, feel free to reach out via my social media channels at the top of the page or write me an email:
+    <a class="email-link" href="mailto:yassin.butt1@gmail.com">yassin.butt1&#64;gmail.com</a>
+  </p>
 </div>
