@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Play:wght@400;700&display=swap');
+p {
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  max-width: 800px;
+  padding: 20px;
+}
 .banner {
   display: flex;
   background-color: #778899;
@@ -95,7 +103,6 @@
 }
 .journey-text {
   font-size: 20px;
-  width: 50%;
   text-align: center;
   color: white;
 }
@@ -119,6 +126,11 @@
   max-width: 25vw;
   min-width: 300px;
   background-color: rgba(0, 0, 0, 0.4);
+  h3 {
+    font-size: 24px;
+    color: dodgerblue;
+    margin-bottom: 10px;
+  }
 }
 .email-link {
   color: red;
@@ -131,19 +143,10 @@
   padding: 10px;
   border-radius: 5px;
 }
-.paragraph {
-  padding: 0 20px;
-  text-align: center;
-  font-family: 'Doto', sans-serif;
-  font-size: 20px;
-  max-width: 800px;
-  color: white;
-  margin-bottom: 0;
-}
 a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .skills-container {
     flex-wrap: nowrap;
     flex-direction: column;
