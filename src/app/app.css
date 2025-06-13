@@ -5,6 +5,9 @@
   justify-content: space-between;
   background-image: url("/bannerbackground.jpg");
 }
+.name-header {
+  font-family: 'Doto', sans-serif; font-size: 60px; margin-bottom: 0; color: dodgerblue;
+}
 .banner-content {
   display: flex;
   justify-content: space-around;
@@ -128,6 +131,32 @@
   padding: 10px;
   border-radius: 5px;
 }
+.paragraph {
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Doto', sans-serif;
+  font-size: 20px;
+  max-width: 800px;
+  color: white;
+  margin-bottom: 0;
+}
 a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+@media (max-width: 1200px) {
+  .skills-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 510px) {
+  .name-header {
+    text-align: center;
+  }
 }
