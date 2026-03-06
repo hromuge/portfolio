@@ -1,8 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Play:wght@400;700&display=swap');
+.bg-new {
+  /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGybShgVpQIAUIoggA?style=linearSwatches */
+  background: linear-gradient(90deg, #121216 0.000%, #121216 7.692%, #16171a calc(7.692% + 1px), #16171a 15.385%, #1a1b1f calc(15.385% + 1px), #1a1b1f 23.077%, #1f2023 calc(23.077% + 1px), #1f2023 30.769%, #232427 calc(30.769% + 1px), #232427 38.462%, #27282b calc(38.462% + 1px), #27282b 46.154%, #2b2c2f calc(46.154% + 1px), #2b2c2f 53.846%, #2f3033 calc(53.846% + 1px), #2f3033 61.538%, #323337 calc(61.538% + 1px), #323337 69.231%, #36373a calc(69.231% + 1px), #36373a 76.923%, #38393d calc(76.923% + 1px), #38393d 84.615%, #3b3c40 calc(84.615% + 1px), #3b3c40 92.308%, #3d3e42 calc(92.308% + 1px) 100.000%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    width: 75%;
+    height: 75%;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .main-content-scroll {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      width: 100%;
+      scroll-snap-type: y mandatory;
+      scroll-snap-align: start;
+
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 100%;
+
+
+        .profile-pic {
+          display: inline-block;
+          position: relative;
+          width: 300px;
+          height: 300px;
+          overflow: hidden;
+          border-radius: 50%;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    .button-bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 30px;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+
+      .window-title {
+        padding: 0 25px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 400;
+      }
+
+      .window-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+        height: 30px;
+        border-radius: 0 20px 0 0;
+
+      }
+    }
+  }
+}
+
 p {
-  font-family: 'Play', sans-serif;
-  font-size: 20px;
-  color: white;
+  font-family: 'Adwaita Sans', sans-serif;
+  font-size: large;
+  font-weight: 300;
   margin: 0;
   max-width: 800px;
   padding: 20px;
@@ -14,7 +93,7 @@ p {
   background-image: url("/bannerbackground.jpg");
 }
 .name-header {
-  font-family: 'Doto', sans-serif; font-size: 60px; margin-bottom: 0; color: dodgerblue;
+  font-family: 'Dosis', sans-serif; font-size: 60px; margin-bottom: 0; color: dodgerblue;
 }
 .banner-content {
   display: flex;
@@ -44,7 +123,6 @@ p {
 .link-button {
   width: 30px;
   height: 30px;
-  background-color: white;
   padding: 5px;
   border-radius: 5px;
 }
@@ -78,14 +156,13 @@ p {
 .circle {
   min-width: 40px;
   min-height: 40px;
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
-  border: 3px solid dodgerblue;
+  border: 3px solid #2F2F2F;
 }
 .timestamp {
   align-self: flex-start;
   margin: 5px 0 0 20px;
-  color: dodgerblue;
+  color: #2F2F2F;
   font-size: 30px;
 }
 .timeline-container {
@@ -104,7 +181,6 @@ p {
 .journey-text {
   font-size: 20px;
   text-align: center;
-  color: white;
   max-width: fit-content;
   margin-right: 20vw;
 }
@@ -114,8 +190,7 @@ p {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  font-family: 'Doto', sans-serif;
-  color: white;
+  font-family: 'Adwaita Sans', sans-serif;
 }
 .project-card {
   display: flex;
@@ -123,14 +198,12 @@ p {
   justify-content: center;
   padding: 20px;
   border-radius: 20px;
-  border: 5px double dodgerblue;
+  border: 5px solid black;
   width: 100%;
   max-width: 25vw;
   min-width: 300px;
-  background-color: rgba(0, 0, 0, 0.4);
   h3 {
     font-size: 24px;
-    color: dodgerblue;
     margin-bottom: 10px;
   }
 }
@@ -146,7 +219,8 @@ p {
   border-radius: 5px;
 }
 a:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 @media (max-width: 1350px) {
   .skills-container {
